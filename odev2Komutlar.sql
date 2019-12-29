@@ -42,11 +42,11 @@ ALTER TABLE "DersKayit" ADD CONSTRAINT "DersKayitDersFK" FOREIGN KEY("ders_kod")
  
 /*INSERT INTO "Ogrenci" ( "ogrenci_adi","ogrenci_soyadi","ogrenci_mail", "bolum_id" ) VALUES('Nil','KOCER','nbozer@gmail.com','1');*/
 /*Bolumler olmadıgından bolum_ıd kısmı bos kalıyor. Daha sonradan ALTER ile dolduralacak. SERIAL olan da AUTO INCREMENT oldugundan kendi artar.*/
-INSERT INTO "Ogrenci" ( "ogrenci_adi","ogrenci_soyadi","ogrenci_mail" ) VALUES('Nil','KOCER','nbozer@gmail.com');
-INSERT INTO "Ogrenci" ( "ogrenci_adi","ogrenci_soyadi","ogrenci_mail" ) VALUES('Serdar','KOCER','serdarkocerr@gmail.com');
-INSERT INTO "Ogrenci" ( "ogrenci_adi","ogrenci_soyadi","ogrenci_mail" ) VALUES('Buse','OZER','bozer@gmail.com');
-INSERT INTO "Ogrenci" ( "ogrenci_adi","ogrenci_soyadi","ogrenci_mail" ) VALUES('Aynur','KOCER','aynurkocer@gmail.com');
-INSERT INTO "Ogrenci" ( "ogrenci_adi","ogrenci_soyadi","ogrenci_mail" ) VALUES('Fatih','KOCATAS','fk@sakarya.edu.tr');
+INSERT INTO "Ogrenci" ( "ogrenci_adi","ogrenci_soyadi","ogrenci_mail" ) VALUES('Nil','ABC','nbozerqrwqrqw@gmail.com');
+INSERT INTO "Ogrenci" ( "ogrenci_adi","ogrenci_soyadi","ogrenci_mail" ) VALUES('Serdar','ABC','serdarrrkkkrrr@gmail.com');
+INSERT INTO "Ogrenci" ( "ogrenci_adi","ogrenci_soyadi","ogrenci_mail" ) VALUES('Buse','CDE','berqeqweq@gmail.com');
+INSERT INTO "Ogrenci" ( "ogrenci_adi","ogrenci_soyadi","ogrenci_mail" ) VALUES('Aynur','EFD','arkor@gmail.com');
+INSERT INTO "Ogrenci" ( "ogrenci_adi","ogrenci_soyadi","ogrenci_mail" ) VALUES('Fatih','KCTS','fk@sakarya.edu.tr');
 
 /*Bolumler insert edildi.*/
 INSert INTO "Bolum"("bolum_ad" ) VALUES('Bilgisayar Müh.');
