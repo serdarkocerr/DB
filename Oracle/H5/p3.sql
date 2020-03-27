@@ -1,0 +1,11 @@
+--SELECT ename, sal FROM emp WHERE sal = (SELECT MIN(sal) FROM emp);
+--SELECT ename, job FROM emp WHERE job = (SELECT job FROM emp WHERE ename = 'BLAKE');
+--SELECT ename, sal, deptno FROM emp where (deptno, sal) IN (SELECT deptno, MIN(sal) FROM emp GROUP BY deptno);
+--SELECT ename, sal, job, deptno FROM emp WHERE sal > ANY (SELECT DISTINCT sal FROM emp WHERE deptno = 30);
+--SELECT DISTINCT sal FROM emp WHERE deptno = 30;
+--SELECT ename, sal, job, deptno FROM emp WHERE sal > ALL (SELECT DISTINCT sal FROM emp WHERE deptno = 30);
+--SELECT deptno, ROUND(AVG(sal)) FROM emp GROUP BY deptno HAVING AVG(sal) > (SELECT AVG(sal) FROM emp);
+--SELECT deptno, ROUND(AVG(sal)) FROM emp GROUP BY deptno;
+--SELECT ROUND(AVG(sal)) FROM emp;
+-- Her departmanda ortalamanýn üsründe maaþ alanlarý bulun
+SELECT ename, sal, deptno FROM emp e WHERE sal > (SELECT avg(sal) FROM emp WHERE deptno = e.deptno);

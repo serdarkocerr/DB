@@ -1,0 +1,16 @@
+SET SERVEROUTPUT ON;
+DECLARE
+  I NUMBER(4);
+BEGIN
+  I := 1;
+  
+  LOOP
+    DBMS_OUTPUT.PUT_LINE('I = ' || I);
+    I := I + 1;
+    
+    EXIT WHEN (I > 5);
+  END LOOP;
+  
+  DBMS_OUTPUT.PUT_LINE('DÖNGÜDEN SONRA I = ' || I);
+  
+END;

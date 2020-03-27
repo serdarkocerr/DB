@@ -1,0 +1,12 @@
+--SELECT ename, comm FROM emp WHERE comm > 0 AND  comm IS NOT NULL;
+-- 
+--SELECT ename FROM emp WHERE ename LIKE 'S%';
+--SELECT ename FROM emp WHERE ename LIKE '_U%'; 
+--SELECT contactlastname FROM customers WHERE contactlastname LIKE 'Ki%';
+--SELECT contactlastname FROM customers WHERE contactlastname LIKE '____';
+--NEGATION: <>, !=, NOT ... = ..., NOT .. > ..
+--SELECT ename, deptno FROM emp WHERE deptno NOT IN (10, 20);
+--SELECT ename FROM emp WHERE NOT ename LIKE 'S%';
+--SELECT ename, hiredate FROM emp ORDER BY hiredate;
+--SELECT ename, hiredate FROM emp WHERE hiredate NOT BETWEEN '22/02/1981' AND '09/06/1981';
+SELECT ename, hiredate FROM emp WHERE hiredate BETWEEN '22/02/1981' AND '09/06/1981';

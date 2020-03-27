@@ -1,0 +1,17 @@
+--SELECT ename FROM emp;
+--SELECT * FROM emp WHERE ename = 'Allen';
+--SELECT * FROM emp WHERE ename = UPPER('Allen');
+--SELECT LOWER('AHMET') FROM dual; 
+--SELECT INITCAP('AHMET') FROM dual;
+--SELECT LPAD('AHMET', 10, '-') FROM dual;
+--SELECT RPAD('AHMET', 10, '-') FROM dual;
+--SELECT SUBSTR('ORACLE',3, 2) FROM dual;
+--SELECT INSTR('ORACLE','CL') FROM dual;
+--SELECT INSTR('ORACLE','CL') FROM dual;
+SELECT LTRIM('ORACLE','O') FROM dual;
+SELECT RTRIM('ORACLE','LE') FROM dual;
+SELECT LENGTH('ADAPAZARI') FROM dual;
+SELECT TRANSLATE('hekko', 'k', 'l') FROM dual;
+SELECT TRANSLATE('ggekko', 'gk', 'hl') FROM dual;
+SELECT REPLACE('orafred', 'fred', 'cle') FROM dual;
+SELECT REPLACE('oracleab', 'ab') FROM dual;

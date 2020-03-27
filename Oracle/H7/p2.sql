@@ -1,0 +1,10 @@
+DECLARE
+  A NUMBER(4,2);
+  B NUMBER(3,2);
+  C NUMBER(5,2);
+BEGIN
+  A := 3.4;
+  B := 7.2;
+  C := A + B;
+  DBMS_OUTPUT.PUT_LINE('TOPLAM = ' || C);
+END;

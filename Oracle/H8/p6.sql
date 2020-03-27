@@ -1,0 +1,6 @@
+-- PROCEDURE VEYA FOKSIYON ÇALIÞTIRMAK ÝÇÝN
+--1) BEGIN
+--     PRO1();
+--    END;
+--2  CALL PRO1();
+--3  EXEC PRO1();

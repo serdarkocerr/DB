@@ -1,0 +1,15 @@
+--SELECT * FROM emp WHERE sal > 2000;
+--SELECT ename, mgr FROM emp WHERE deptno = 10;
+-- MANTIKSAL OPERATÖRLER
+-- =, >, >=, <, <=
+--SELECT ename, empno FROM emp WHERE   (hiredate <= '01-Jan-98');
+--SELECT sysdate FROM dual;
+--SELECT ename, empno, hiredate FROM emp WHERE   (hiredate <= '01/01/98');
+--SELECT ename, empno, hiredate FROM emp WHERE   (hiredate <= TO_DATE('01.01.1998','DD.MM.YYYY')); 
+--SELECT 4*5 FROM dual;
+--SELECT ename, sal, comm FROM emp WHERE NVL(comm, 0)  > sal;
+--SQL OPERATÖRLERÝ
+-- BETWEEN, IN, IS NULL, LIKE
+--SELECT ename FROM emp WHERE deptno BETWEEN 20 AND 50;
+--SELECT ename, deptno FROM emp WHERE deptno IN (10, 30);
+SELECT ename, comm FROM emp WHERE comm IS NULL;

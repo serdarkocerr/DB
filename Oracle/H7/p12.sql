@@ -1,0 +1,15 @@
+-- WHILE DÖNGÜSÜ
+
+DECLARE
+  I NUMBER;
+  K NUMBER;
+  L NUMBER;
+BEGIN
+  K := 7;
+  L := 15;
+  FOR I IN REVERSE K..L
+  LOOP
+    DBMS_OUTPUT.PUT_LINE('I = ' || I);
+  END LOOP;
+  DBMS_OUTPUT.PUT_LINE('DÖNGÜ DIÞINDA I = ' || I);
+END;

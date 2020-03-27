@@ -1,0 +1,14 @@
+--SELECT ename, nvl(to_char(mgr), 'PATRON BU') FROM emp;
+--Grup fonksiyonlarý
+--SELECT to_char(avg(sal), '999999.99') FROM emp;
+--SELECT count(*) FROM emp;
+--SELECT sum(sal) FROM emp;
+--SELECT to_char(sum(sal) / count(*), '99999.99') FROM emp;
+--SELECT max(sal) FROM emp;
+--SELECT min(sal) FROM emp;
+--SELECT to_char(stddev(sal), '9999.99') FROM emp;
+--SELECT to_char(variance(sal), '999999999.99') FROM emp;
+--SELECT job, avg(sal) FROM emp where deptno = 20 GROUP BY job;
+--SELECT job, sal FROM emp where deptno = 20;
+--SELECT job, avg(sal)  FROM emp where deptno = 20 GROUP BY job HAVING  avg(sal) > 1000;
+select job,count(*) from emp group by job;

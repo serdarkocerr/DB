@@ -1,0 +1,29 @@
+SQL Plus ile
+
+- cmd açılır ve ekrana sqlplus / as SYSDBA ile admin rolüyle giriş yapılır.
+
+
+-alter session set "_oracle_script"=true;
+ kullanıcı tanımlamak için create user skocer identified by 123;
+
+
+-conn skocer ile giriş yaparsak bizi database e girdirmez. Kullanıcı yaratılması ve ardından yetki verilmesi gerekiyor.
+ grant createsession to skocer;
+ grant connect to skocer;
+- olan bir tabloya skocer kullanıcına yetki verilmesi
+create table abc (id number, ad varchar2(32)); tablo oluşturulur.
+grant select,insert,update,delete on abc to skocer; ile skocer'e yetki verilir.
+grant unlimited tablespace to skocer;
+grant create any table to skocer;
+
+
+
+geri almak için 
+
+revoke create session from skocer;
+
+conn SYSTEM
+kurulum yapılırken olan şifre
+
+drop user skocer CASCADE;
+

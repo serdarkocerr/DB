@@ -1,0 +1,15 @@
+--SELECT * FROM emp;
+--SELECT empno PNO, ename ISIM FROM emp;
+--SELECT ename, sal FROM emp;
+--SELECT ename ISIM, sal*12 YILLIK_MAAS FROM emp;
+--SELECT 3.14*2*2 "ÇEMBERÝN ALANI" FROM dual;
+--SELECT ename "ÝSÝM", sal "MAAÞ" FROM emp;
+--SELECT 'Isim = ' || ename AS BASLIK, sal AS MAAS FROM emp;
+--SELECT 'ÇEMBERÝN ALANI = ' || 3.14*2*2 || ' m2' AS ALAN FROM dual;
+--SELECT ename, ' works in department ' literal, deptno FROM emp;
+--SELECT ename, comm FROM emp;
+--SELECT ename, nvl(comm, 0) FROM emp;
+--SELECT ename, sal * 12 + nvl(comm,0) FROM emp;
+--SELECT sysdate FROM dual;
+--SELECT nvl(ename, '-GIRILMEMIS-') FROM emp_new;
+SELECT nvl(ename,'-GIRILMEMIS-') , nvl(hiredate, sysdate) FROM emp_new;
