@@ -1,4 +1,4 @@
-NOT: Procesedur, Function, Trigger olustururken sqldeveloper gui'den sag tik ile yapmaya calis. 
+NOT: Procesedure, Function, Trigger olustururken sqldeveloper gui'den sag tik ile yapmaya calis. 
 Diger turlu hata olabiliyor. Calismayabilliyor.
 
 ---Hafta 10 ---
