@@ -1,3 +1,6 @@
+NOT: Procesuder, Function, Trigger olustururken sqldeveloper gui'den sag tik ile yapmaya calis. 
+Diger turlu hata olabiliyor. Calismayabilliyor.
+
 ---Hafta 10 ---
 /*--SET SERVEROUTPUT ON;
 --CLERK'lere %15 zam veren
